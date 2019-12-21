@@ -1,0 +1,43 @@
+body {position:relative;
+     height:800px}
+.box {
+	display:inline-block;
+	position:relative;
+	height:100px;
+    background-color:orange;
+    width:100px;
+    animation:myframe 5s ease-in-out 0s  infinite alternate}
+.imgg {
+	position:absolute;
+    height:200px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    transition-duration:0.5s}
+    
+.imgg:hover{
+	  transform:translate(-50%, -50%) rotate(180deg); 
+}
+
+@keyframes myframe {
+  0%   {top:20px; left:50px; background-color:#a53dbf;}
+  25%  {top:20px; left:1100px;background-color:#584ad9;}
+  50%  {top:750px; left:1100px;background-color:#54bf9d;}
+  75%  {top:750px; left:50px;background-color:#ebc336;}
+  100% {top: 20px; left:50px;background-color:#e87156;}
+
+ .box2 {
+ 	display: inline-block;
+    position:relative;
+	height:100px;
+    background-color:red;
+    width:100px;
+    animation:boxframe 5s ease-in-out 0s  infinite alternate}
+
+
+@keyframes boxframe {
+  0%   {top:220px; right:50px; background-color:#d98289;}
+  25%  {top:220px; right:1000px;background-color:#71de92;}
+  50%  {top:750px; right:1000px;background-color:#c472ad;}
+  75%  {top:750px; right:50px;background-color:#7be880;}
+  100% {top: 220px; right:50px;background-color:#8fcc96;}
