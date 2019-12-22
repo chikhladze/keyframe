@@ -1,5 +1,7 @@
-body {position:relative;
-     height:800px}
+body {
+	position:relative;
+    height:800px;
+    background-color:#cc99ff}
 .box {
 	display:inline-block;
 	position:relative;
@@ -8,15 +10,16 @@ body {position:relative;
     width:100px;
     animation:myframe 5s ease-in-out 0s  infinite alternate}
 .imgg {
+    background-color:#99ff99;
 	position:absolute;
-    height:200px;
+    height:100px;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
     transition-duration:0.5s}
     
 .imgg:hover{
-	  transform:translate(-50%, -50%) rotate(180deg); 
+	  transform:translate(-50%, -50%) rotate(360deg); 
 }
 
 @keyframes myframe {
